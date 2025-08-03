@@ -34,4 +34,4 @@ for q in tqdm(test['Question'], desc="Inference"):
 
 sample_submission = pd.read_csv('./sample_submission.csv')
 sample_submission['Answer'] = preds
-sample_submission.to_csv('./baseline_submission.csv', index=False, encoding='utf-8-sig')
+sample_submission.to_csv('./answer.csv', index=False, encoding='utf-8-sig')
